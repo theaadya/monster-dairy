@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<title>Monster Dairy</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content=""> 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+<!--  <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif" /> -- >
+<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body>  
+  <!--header section start -->
+     <div class="header_section background_bg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="logo"><a href="{{url_for('adminindex')}}"><img src="{{ url_for('static', filename='images/mylogo2.png') }}" width="30%" height="30%"></a></div>
+          </div>
+          <div class="col-md-9">
+            <div class="menu_text">
+              <ul>
+                <div class="togle_3">
+                  <div class="menu_main">
+                    <div class="padding_left0"><a href="{{url_for('adminindex')}}">Home </a>
+                    <span class="padding_left0"><a href="{{url_for('adminlogout')}}">Logout</a></span></div>
+                  </div>
+                </div>
+                <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="{{url_for('sales')}}">Sales</a>
+                  <a href="{{url_for('products')}}">Products</a>
+                  <a href="{{url_for('inventory')}}">Inventory</a>
+                  <a href="{{url_for('outlets')}}">Outlets</a>
+                  <a href="{{url_for('staff')}}">Staff</a>
+                </div>
+                </div>
+                <span class="navbar-toggler-icon"></span>
+                <span onclick="openNav()"><img src="{{ url_for('static', filename='images/toggle-icon.png') }}" class="toggle_menu"></span>
+              </ul>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header section end -->
+    <!-- footer section start -->
+    <div class="footer_section2 layout_padding d-flex align-items-center justify-content-center text-center">
+      <div class="container_center">
+      <div class="footer_main2">
+      <div class="footer_center">
+          <h1 class="contact_taital2"><span>Outlets</span></h1>
+          <p class="choose_text">Retrieve a comprehensive list of all departments currently existing within the organization:</p>
+          <div class="col-md-12">
+            <span>
+              <table style="margin: 0 auto;">
+                <tr>
+                <th style="padding: 20px;">Department Name</th>
+                </tr>
+                {% for i in range(5) %}
+                    <tr>
+                    <td style="padding: 20px;">{{account[i]['deptname']}}</td>
+                    </tr>
+                {% endfor %}
+            </table></span>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    <!-- footer section end -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugin.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $(".fancybox").fancybox({
+    openEffect: "none",
+    closeEffect: "none"
+    });
+         
+    $(".zoom").hover(function(){
+         
+    $(this).addClass('transition');
+    }, function(){
+         
+    $(this).removeClass('transition');
+    });
+    });
+    </script> 
+    <script>
+     function openNav() {
+     document.getElementById("myNav").style.width = "100%";
+    }
+     function closeNav() {
+     document.getElementById("myNav").style.width = "0%";
+    }
+    </script>  
+</body>
+</html>
