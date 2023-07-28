@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<title>Monster Dairy</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content=""> 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+<!-- fevicon -->
+<!--  <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif" /> -- >
+<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+<!--  <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}"> -- >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body>
+  <!--header section start -->
+    <div class="header_section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="logo"><a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='images/mylogo2.png') }}" width="30%" height="30%"></a></div>
+          </div>
+          <div class="col-md-9">
+            <div class="menu_text">
+              <ul>
+                <div class="togle_3">
+                  <div class="menu_main">
+                    <div class="padding_left0"><a href="{{url_for('register')}}">Register</a>
+                    <span class="padding_left0"><a href="{{url_for('login')}}">Login</a></span>
+                    <span class="padding_left0"><a href="{{url_for('admin')}}">Admin</a></span></div>
+                  </div>
+                  <!-- <div class="shoping_bag"><img src="{{ url_for('static', filename='images/search-icon.png') }}"></div> -->
+                </div> 
+              </ul>
+            </div>      
+          </div>
+        </div>
+      </div>
+    <!-- banner section start -->
+    <div class="banner_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <h1 class="banner_taital">A moo point</h1> 
+            <h1 style="font-size: 50px" class="banner_taital_1">Monster Dairy</h1>
+            <p class="banner_text">Fresh from the farm to your table. Monster Dairy brings you the creamiest milk and dairy products for a healthier lifestyle.</p>
+            <div class="contact_bt"><a href="{{url_for('browse')}}">BROWSE NOW<span class="contact_padding"><img src="{{ url_for('static', filename='images/contact-icon.png') }}"></span></a></div>
+          </div>
+          <div class="col-sm-2">
+            <div class="play_icon"><a href="{{url_for('admin')}}"><img src="{{ url_for('static', filename='images/milk-icon.png') }}"></a></div>
+          </div>
+          <div class="col-sm-5">
+            <div><img src="{{ url_for('static', filename='images/Asset 1.png') }}" class="image_1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner section end -->
+    </div>
+    <!-- header section end -->
+    <!-- Javascript files-->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugin.js') }}"></script>
+    <!-- sidebar -->
+    <script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <!-- javascript --> 
+    <!--  <script src="{{ url_for('static', filename='js/owl.carousel.js') }}"></script> -- >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $(".fancybox").fancybox({
+    openEffect: "none",
+    closeEffect: "none"
+    });
+         
+    $(".zoom").hover(function(){
+         
+    $(this).addClass('transition');
+    }, function(){
+         
+    $(this).removeClass('transition');
+    });
+    });
+    </script> 
+    <script>
+     function openNav() {
+     document.getElementById("myNav").style.width = "100%";
+    }
+     function closeNav() {
+     document.getElementById("myNav").style.width = "0%";
+    }
+    </script>  
+</body>
+</html>

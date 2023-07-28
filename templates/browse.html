@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Monster Dairy</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content=""> 
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+<!-- Responsive-->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+<!-- fevicon -->
+<!--  <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif" /> -- >
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+<!--  <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}"> -- >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body>
+  <!--header section start -->
+    <div class="header_section background_bg">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="logo"><a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='images/mylogo2.png') }}" width="30%" height="30%"></a></div>
+          </div>
+          <div class="col-md-9">
+            <div class="menu_text">
+              <ul>
+                <div class="togle_3">
+                  <div class="menu_main">
+                    <div class="padding_left0"><a href="{{url_for('register')}}">Register</a>
+                    <span class="padding_left0"><a href="{{url_for('login')}}">Login</a></span>  
+                    <span class="padding_left0"><a href="{{url_for('admin')}}">Admin</a></span></div>  
+                  </div>
+                  <!-- <div class="shoping_bag"><img src="images/search-icon.png"></div> -->
+                </div> 
+              </ul>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header section end -->
+    <!-- choose section start -->
+    <div class="choose_section layout_padding">
+      <div class="container">
+        <h1 class="choose_taital"><span>Our </span> <img src="{{ url_for('static', filename='images/milk-product.png') }}" width="5%" height="5%"> <span style="color: #1f1f1f">Products</span></h1>
+        <p class="choose_text">Experience the purest and freshest dairy delights, only at Monster Dairy.</p>
+        <div class="choose_section_2 layout_padding">
+          <div class="row">
+           {% for i in range(30) %}          
+            <div class="col-lg-3 col-sm-6">
+              <div class="choose_box">
+                <p1 class="choose_text">Left:</p1>
+                <h1 class="client_taital">{{account[i]['QuantityLeft']}}</h1>
+                {% if i == 0 %} 
+                <h4 class="client_text">Toned Milk</h4>
+                {% elif i == 1 %}
+                <h4 class="client_text">Whole Wheat Bread</h4>
+                {% elif i == 2 %}
+                <h4 class="client_text">Paneer</h4>
+                {% elif i == 3 %} 
+                <h4 class="client_text">Cream</h4>
+                {% elif i == 4 %} 
+                <h4 class="client_text">Cream cheese</h4>
+                {% elif i == 5 %}
+                <h4 class="client_text">Feta cheese</h4>
+                {% elif i == 6 %}
+                <h4 class="client_text">Mozzarella cheese</h4>
+                {% elif i == 7 %}
+                <h4 class="client_text">Cheddar cheese</h4>
+                {% elif i == 8 %}
+                <h4 class="client_text">Swiss cheese</h4>
+                {% elif i == 9 %}
+                <h4 class="client_text">Parmesan cheese</h4>
+                {% elif i == 10 %}
+                <h4 class="client_text">Butter</h4>
+                {% elif i == 11 %}
+                <h4 class="client_text">Yogurt</h4>
+                {% elif i == 12 %}
+                <h4 class="client_text">Curd</h4>
+                {% elif i == 13 %}
+                <h4 class="client_text">Ghee</h4>
+                {% elif i == 14 %}
+                <h4 class="client_text">Ice cream</h4>
+                {% elif i == 15 %}
+                <h4 class="client_text">Milkshake</h4>
+                {% elif i == 16 %}
+                <h4 class="client_text">Milk powder</h4>
+                {% elif i == 17 %}
+                <h4 class="client_text">Milk chocolate</h4>
+                {% elif i == 18 %}
+                <h4 class="client_text">Milk candy</h4>
+                {% elif i == 19 %}
+                <h4 class="client_text">Milk cake</h4>
+                {% elif i == 20 %}
+                <h4 class="client_text">Milk cookies</h4>
+                {% elif i == 21 %}
+                <h4 class="client_text">Sour cream</h4>
+                {% elif i == 22 %}
+                <h4 class="client_text">Milk pudding</h4>
+                {% elif i == 23 %}
+                <h4 class="client_text">Milk jelly</h4>
+                {% elif i == 24 %}
+                <h4 class="client_text">Buttermilk</h4>
+                {% elif i == 25 %}
+                <h4 class="client_text">Blue cheese</h4>
+                {% elif i == 26 %}
+                <h4 class="client_text">Smoothie</h4>
+                {% elif i == 27 %}
+                <h4 class="client_text">Hot chocolate powder</h4>
+                {% elif i == 28 %}
+                <h4 class="client_text">Condensed milk</h4>
+                {% elif i == 29 %}
+                <h4 class="client_text">Flavoured Milk</h4>
+                {% endif %}
+                <p1 class="choose_text">Rs. {{account[i]['Price']}}</p1>
+              </div>
+              <div class="text-center">
+                <div>
+                  <form action="{{ url_for('shop') }}" method="POST">
+                    <input type="hidden" name="item_id" value="{{ account[i]['ItemID'] }}">
+                    <input type="hidden" name="item_price" value="{{ account[i]['Price'] }}">
+                    <button type="submit" class="get_bt">Login to Cont.</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- choose section end -->
+    <!-- Javascript files-->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugin.js') }}"></script>
+    <!-- sidebar -->
+    <script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <!-- javascript --> 
+    <!--  <script src="{{ url_for('static', filename='js/owl.carousel.js') }}"></script> -- >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $(".fancybox").fancybox({
+    openEffect: "none",
+    closeEffect: "none"
+    });
+         
+    $(".zoom").hover(function(){
+         
+    $(this).addClass('transition');
+    }, function(){
+         
+    $(this).removeClass('transition');
+    });
+    });
+    </script> 
+    <script>
+     function openNav() {
+     document.getElementById("myNav").style.width = "100%";
+    }
+     function closeNav() {
+     document.getElementById("myNav").style.width = "0%";
+    }
+    </script>  
+</body>
+</html>
