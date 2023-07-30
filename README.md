@@ -12,8 +12,8 @@ You can access the site from here: http://theaadya.pythonanywhere.com/
 The user can Register for a New Account or,
 Login from dummy account 
 ```bash
-Aadya
-111
+xyz
+456
 ```
 
 The are different features available for the user:
