@@ -6,6 +6,7 @@ The Dairy Site is a web application built using Python, Flask, MySQL, HTML, CSS,
 The primary goal of this project is to create a simulated online retail store focused on dairy products, offering a seamless shopping experience to customers.
 
 You can access the site from here: http://theaadya.pythonanywhere.com/
+(free hosting, the site might break, no promises)
 
 ### User Side
 
