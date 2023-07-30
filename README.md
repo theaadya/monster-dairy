@@ -2,6 +2,7 @@
 
 ## Introduction
 This project is a web application built using Python, Flask, MySQL, HTML, CSS, and JavaScript. It allows users to buy milk and milk products from the Dairy Site.
+You can access the site from here: http://theaadya.pythonanywhere.com/
 
 ### User Side
 The user can Register for a New Account or,
@@ -27,7 +28,7 @@ Aadya
 aadya_0105
 ```
 
-This document provides a step-by-step guide on how to set up the application on your local machine, including downloading the SQL dump and running the application.
+Here's a step-by-step guide on how to set up the application on your local machine, including downloading the SQL dump and running the application.
 
 ## Installation and Setup
 
