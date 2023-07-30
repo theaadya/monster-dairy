@@ -1,7 +1,4 @@
 # Monster Dairy 
-Import the sql dump to your system
-Run app.py
-Visit http://localhost:5002/index 
 
 ## Introduction
 This project is a web application built using Python, Flask, MySQL, HTML, CSS, and JavaScript. It allows users to buy milk and milk products from the Dairy Site. The user 
@@ -17,6 +14,7 @@ Clone this repository to your local machine using the following command:
 git clone https://github.com/theaadya/monster-dairy
 cd monster-dairy
 ```
+
 ### 2. Set Up MySQL Database
 
 Import the MySQL dump file to your system by running the following command in your cmd. 
