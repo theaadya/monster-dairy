@@ -4,7 +4,12 @@
 This project is a web application built using Python, Flask, MySQL, HTML, CSS, and JavaScript. It allows users to buy milk and milk products from the Dairy Site.
 
 ### User Side
-The user can Register for a New Account or Login from dummy account []
+The user can Register for a New Account or,
+Login from dummy account 
+```bash
+Aadya
+111
+```
 
 The are different features available for the user:
 - Add item to Cart
