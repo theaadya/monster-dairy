@@ -1,7 +1,27 @@
 # Monster Dairy 
 
 ## Introduction
-This project is a web application built using Python, Flask, MySQL, HTML, CSS, and JavaScript. It allows users to buy milk and milk products from the Dairy Site. The user 
+This project is a web application built using Python, Flask, MySQL, HTML, CSS, and JavaScript. It allows users to buy milk and milk products from the Dairy Site.
+
+### User Side
+The user can Register for a New Account or Login from dummy account []
+
+The are different features available for the user:
+- Add item to Cart
+- Checkout Cart
+- Apply for Subscription
+- Apply for Membership
+- Cancel your order
+
+### Admin Side
+Only the administrators can access the Admin Page. They can then view the Sales, Products, Outlets, Inventory, and Staff personal information.
+
+The admin login is (Username, Password):
+```bash
+Aadya
+aadya_0105
+```
+
 This document provides a step-by-step guide on how to set up the application on your local machine, including downloading the SQL dump and running the application.
 
 ## Installation and Setup
