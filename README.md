@@ -1,10 +1,14 @@
 # Monster Dairy 
 
 ## Introduction
-This project is a web application built using Python, Flask, MySQL, HTML, CSS, and JavaScript. It allows users to buy milk and milk products from the Dairy Site.
+The Dairy Site is a web application built using Python, Flask, MySQL, HTML, CSS, and JavaScript. It provides users with the ability to purchase milk and milk products online. 
+
+The primary goal of this project is to create a simulated online retail store focused on dairy products, offering a seamless shopping experience to customers.
+
 You can access the site from here: http://theaadya.pythonanywhere.com/
 
 ### User Side
+
 The user can Register for a New Account or,
 Login from dummy account 
 ```bash
@@ -13,13 +17,16 @@ Aadya
 ```
 
 The are different features available for the user:
+- Browse a wide range of products
 - Add item to Cart
 - Checkout Cart
+- Track your Order
 - Apply for Subscription
 - Apply for Membership
 - Cancel your order
 
 ### Admin Side
+
 Only the administrators can access the Admin Page. They can then view the Sales, Products, Outlets, Inventory, and Staff personal information.
 
 The admin login is (Username, Password):
@@ -60,3 +67,7 @@ flask run
 ### 4. Access the Application
 
 Open your web browser and visit http://127.0.0.1:5002 or http://localhost:5002 to access the web application.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas, suggestions, or improvements, please submit a pull request or open an issue on the GitHub repository.
