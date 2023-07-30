@@ -1522,7 +1522,7 @@ textarea#comment::placeholder {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--black);
+    background: #000000;
     border-radius: 1rem;
   }
   

@@ -67,7 +67,7 @@ flask run
 
 ### 4. Access the Application
 
-Open your web browser and visit http://127.0.0.1:5002 or http://localhost:5002 to access the web application.
+Open your web browser and visit http://127.0.0.1:5000 or http://localhost:5000 to access the web application.
 
 ## Contributing
 
