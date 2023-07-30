@@ -1510,3 +1510,19 @@ textarea#comment::placeholder {
     transition: display 0.4s ease-in;
   }
   
+  /* Width */
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #96D4EF
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--black);
+    border-radius: 1rem;
+  }
+  
